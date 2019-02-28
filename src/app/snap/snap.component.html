@@ -1,0 +1,9 @@
+<mat-form-field>
+  <input matInput value="login!" placeholder="enter your name" #message>
+</mat-form-field>
+<br>
+<mat-form-field>
+  <input matInput value="failed" placeholder="enter your password" #action>
+</mat-form-field>
+<br>
+<button mat-button (click)="openSnackBar(message.value, action.value)">Login</button>
